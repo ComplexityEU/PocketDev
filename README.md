@@ -5,14 +5,14 @@ This is a PhpStorm project that will work as a development environment for worki
 ## Prerequisites ##
 
 For this project to work correctly, you must have a compatible PHP binary on you computer and PhpStorm setup to properly use it.
-- Download a PHP binary for your OS from https://jenkins.pmmp.io/job/PHP-7.3-Aggregate/
-- Extract the files to a location on your computer (e.g. C:\php\php7.3)
-- Go to PhpStorm's settings for Language and Frameworks, then choose the PHP section
-- Update "PHP language level" to 7.3
-- Click the triple dot button next the "CLI Interpreter".  This will open a new window
-- In the "CLI Interpreter" window, change the name to something like PHP PocketMine
+- Download a PHP binary for your OS from [GitHub Releases](https://github.com/pmmp/PHP-Binaries/releases) or if you already have a pre-existing PHP binary downloaded, you can use the `UpdatePHP.php` script to update to a newer binary.
+- If you downloaded a binary from [GitHub](https://github.com/pmmp/PHP-Binaries/releases), you must extract the files to a location on your computer (e.g. C:\php\bin\php)
+- Go to PhpStorm's settings for Language and Frameworks, then choose the PHP section.
+- Update "PHP language level" to 8.0 (or higher depending on the binary you downloaded).
+- Click the triple dot button next the "CLI Interpreter".  This will open a new window.
+- In the "CLI Interpreter" window, change the name to something like "PHP PocketMine".
 - Click the folder icon in the "PHP executable" option.
-- Locate your php executable file (e.g C:\php\php7.3\php.exe)
+- Locate your php executable file (e.g C:\php\bin\php\php.exe)
 - Click "Apply" then "OK" in the "CLI Interpreter" window
 - Click the "PHP Runtime" tab just below the "CLI Interpreter" box
 - Click the button at the bottom that says "Sync Extensions with Interpreter"
@@ -26,10 +26,10 @@ This project comes with several pre-built Run Configurations.  The first one tha
 Once you've used the "Setup Environment" run configuration, you can start adding plugin source code folders to the "plugins" folder that was created.
 
 ## After Setup
-After running "Setup Environment" a "plugins" folder and "server" folder will be in the project folder. These folder contain the various parts and pieces that will be used for developing and testing your plugins. 
+After running "Setup Environment" a "plugins" folder and "server" folder will be in the project folder. These folder contain the various parts and pieces that will be used for developing and testing your plugins.
 
 >#### Plugins Folder
->You can put the source code of your plugins in sub-directories of the "plugins" folder.  It is important that the subdirectory contain the plugin.yml file and src folder of your plugin.  An example of what this needs to look like will have been created during the setup.
+>You can put the source code of your plugins in subdirectories of the "plugins" folder.  It is important that the subdirectory contain the plugin.yml file and src folder of your plugin.  An example of what this needs to look like will have been created during the setup.
 
 >___
 >#### Server Folder
@@ -44,5 +44,9 @@ After running "Setup Environment" a "plugins" folder and "server" folder will be
 >Occasionally, you may need to update the version of PocketMine-MP your test environment is using. The easiest way to do this is to use the "Update PocketMine-MP" run configuration.  This will remove the current PocketMine-MP server file and replace it with whatever the most current, stable version is on GitHub.  Optionally, you can manually update the file by downloading a replacement from [GitHub Releases](https://github.com/pmmp/PocketMine-MP/releases).
 
 >___
+>#### Updating PHP
+>There might be a time when a new PocketMine-MP version requires a different PHP binary in order to be used. In this case the easiest way to do this is by using the "Update PHP" run configuration. This will create a directory called "php-binaries" and will download the new binary to this directory. Optionally, you can also download a new binary from the [GitHub Releases](https://github.com/pmmp/PHP-Binaries/releases).
+
+>___
 >#### DeVirion
->The test environment will include a plugin to help you test called DeVirion. This plugin loads special libraries that some plugins may need. If you need details on how to use it, you can get that from its page on [Poggit](https://poggit.pmmp.io/p/Devirion).  It can be updated as needed using the "Update DeVirion" run configuration.
+>The test environment will 
