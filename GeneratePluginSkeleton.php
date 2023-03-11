@@ -104,9 +104,9 @@ $namespace = $organizationName . "\\" . strtolower($pluginName);
 
 $manifest = [
     "name" => $pluginName,
-    "version" => "0.0.1",
+    "version" => "1.0.0",
     "main" => $namespace . "\\$pluginName",
-    "api" => "3.11.0"
+    "api" => "4.0.0"
 ];
 @mkdir(PLUGIN_DIR);
 mkdir(PLUGIN_DIR . $pluginName);
