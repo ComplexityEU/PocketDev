@@ -49,4 +49,4 @@ After running "Setup Environment" a "plugins" folder and "server" folder will be
 
 >___
 >#### DeVirion
->The test environment will 
+>The test environment will include a plugin to help you test called DeVirion. This plugin loads special libraries that some plugins may need. If you need details on how to use it, you can get that from its page on [Poggit](https://poggit.pmmp.io/p/Devirion).  It can be updated as needed using the "Update DeVirion" run configuration.
