@@ -5,8 +5,8 @@ This is a PhpStorm project that will work as a development environment for worki
 ## Prerequisites ##
 
 For this project to work correctly, you must have a compatible PHP binary on you computer and PhpStorm setup to properly use it.
-- Download a PHP binary for your OS from [GitHub Releases](https://github.com/pmmp/PHP-Binaries/releases) or if you already have a pre-existing PHP binary downloaded, you can use the `UpdatePHP.php` script to update to a newer binary.
-- If you downloaded a binary from [GitHub](https://github.com/pmmp/PHP-Binaries/releases), you must extract the files to a location on your computer (e.g. C:\php\bin\php)
+- Download a PHP binary for your OS from [GitHub Releases](https://github.com/pmmp/PHP-Binaries/releases).
+- Extract the files to a location on your computer (e.g. C:\php\bin\php)
 - Go to PhpStorm's settings for Language and Frameworks, then choose the PHP section.
 - Update "PHP language level" to 8.0 (or higher depending on the binary you downloaded).
 - Click the triple dot button next the "CLI Interpreter".  This will open a new window.
